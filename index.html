@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Ferraz | Portfólio</title>
+    <link rel="icon" type="image/png" href="Imagens/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Signika+Negative:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <nav class="barra">
+        <div class="logo">
+            <a href="#home" id="logo-distort" style="filter: url(#distortionFilterLogo);">{JF}</a>
+        </div>
+        <svg class="distort-svg-container">
+            <filter id="distortionFilterLogo">
+                <feTurbulence type="fractalNoise" baseFrequency="2.01 .01" numOctaves="5" seed="2" result="noise"></feTurbulence>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+            </filter>
+        </svg>      
+        <ul class="links">
+            <li><a href="#SOBRE-MIM" data-pt="SOBRE MIM" data-en="ABOUT ME">SOBRE MIM</a></li>
+            <li><a href="#FORMACAO" data-pt="FORMAÇÃO" data-en="EDUCATION">FORMAÇÃO</a></li>
+            <li><a href="#PORTFOLIO" data-pt="PORTFÓLIO" data-en="PORTFOLIO">PORTFÓLIO</a></li>
+            <li><a href="#CONTATO" data-pt="CONTATO" data-en="CONTACT">CONTATO</a></li>
+        </ul>
+        <button id="btn-idioma" class="btn-lang">EN</button>       
+    </nav> 
+    <section class="banner" id="home">
+        <div class="banner-container">
+            <img src="Imagens/jf_p&b.png" alt="Jason Ferraz" class="foto-banner">
+            <div class="banner-textos">
+                <h1>JASON FERRAZ</h1>
+                <p data-pt="Desenvolvedor de Sistemas | Full Stack" data-en="Systems Developer | Full Stack">
+                    Desenvolvedor de Sistemas | Full Stack
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="SOBRE-MIM" class="sobre-mim">
+        <div class="container-sobre">
+            <h2 data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
+                <p data-pt="Olá! Meu nome é <b>Jason Ferraz</b>, sou pernambucano radicado em Curitiba, casado, pai e cristão. Atualmente, curso bacharelado em <b>Engenharia de Software pela UNINTER</b>, com foco em me tornar um desenvolvedor Full Stack de alta performance."
+                data-en="Hi! My name is <b>Jason Ferraz</b>, I'm from Pernambuco living in Curitiba, married, father, and Christian. Currently, I'm pursuing a Bachelor's in <b>Software Engineering at UNINTER</b>, focusing on becoming a high-performance Full Stack developer.">
+                Olá! Meu nome é <b>Jason Ferraz</b>, sou pernambucano radicado em Curitiba, casado, pai e cristão. Atualmente, curso bacharelado em <b>Engenharia de Software pela UNINTER</b>, com foco em me tornar um desenvolvedor Full Stack de alta performance.
+                </p>
+
+                <p data-pt="Minha trajetória é marcada pela disciplina, pelo detalhe e pelo <b>empreendedorismo</b>. Além de atuar como empresário, o que me deu uma visão estratégica de processos, trabalhei por 15 anos como <b>músico profissional (trompetista)</b>. Essa bagagem me ensinou o rigor técnico e a colaboração extrema — habilidades que agora transiciono para o desenvolvimento de software."
+                data-en="My journey is marked by discipline, detail, and <b>entrepreneurship</b>. In addition to acting as a business owner, which gave me a strategic view of processes, I worked for 15 years as a <b>professional musician (trumpeter)</b>. This background taught me technical rigor and extreme collaboration — skills I now transition into software development.">
+                Minha trajetória é marcada pela disciplina, pelo detalhe e pelo <b>empreendedorismo</b>. Além de atuar como empresário, o que me deu uma visão estratégica de processos, trabalhei por 15 anos como <b>músico profissional (trompetista)</b>. Essa bagagem me ensinou o rigor técnico e a colaboração extrema — habilidades que agora transiciono para o desenvolvimento de software.
+                </p>
+
+                <p data-pt="Somando a veia empreendedora à base técnica como <b>Técnico em Informática</b>, possuo um olhar sólido sobre hardware e sistemas. Hoje, dedico-me ao domínio de arquiteturas Full Stack para construir soluções tecnológicas escaláveis, eficientes e com foco real em resultados."
+                data-en="Combining an entrepreneurial mindset with a technical background as an <b>IT Technician</b>, I have a solid foundation in hardware and systems. Today, I dedicate myself to mastering Full Stack architectures to build scalable, efficient technological solutions with a real focus on results.">
+                Somando a veia empreendedora à base técnica como <b>Técnico em Informática</b>, possuo um olhar sólido sobre hardware e sistemas. Hoje, dedico-me ao domínio de arquiteturas Full Stack para construir soluções tecnológicas escaláveis, eficientes e com foco real em resultados.
+                </p>
+        </div>
+    </section>
+    <section class="Instagram">
+        <a href="https://www.instagram.com/jason.ferraz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <img class="FotoLink" src="Imagens/jf_instagram.png" alt="Instagram Jason Ferraz">
+        </a>
+        <div class="insta-textos">
+            <span class="label-instagram">INSTAGRAM</span>
+            <h3>Jason Ferraz</h3>
+            <p>@jason.ferraz</p>
+        </div>
+    </section>
+    <section id="FORMACAO" class="formacao">
+        <div class="container-formacao">
+            <h2 data-pt="Formação Educacional" data-en="Educational Background">Formação Educacional</h2>
+            <ul class="lista-formacao">
+                <li>
+                    <strong data-pt="Ensino Superior" data-en="Higher Education">Ensino Superior</strong>
+                    <p data-pt="Bacharelado em Engenharia de Software" data-en="Bachelor of Software Engineering">Bacharelado em Engenharia de Software</p>
+                    <p>Centro Universitário Internacional (Uninter)</p>
+                    <p class="data" data-pt="Previsão de Conclusão em 2028" data-en="Expected Completion in 2028">Previsão de Conclusão em 2028</p>
+                </li>
+                <li data-pt="Ensino Médio Completo" data-en="High School Completed">Ensino Médio Completo</li>
+            </ul>
+
+            <h2 data-pt="Cursos" data-en="Courses">Cursos</h2>
+            <ul class="lista-formacao">
+                <li>
+                    <strong>Web Designer</strong>
+                    <p>Dreamweaver, Fireworks, Swish, Movie Gear, CuteFtp e Flash.</p>
+                </li>
+                <li>
+                    <strong data-pt="Operação Básica" data-en="Basic Computing">Operação Básica</strong>
+                    <p>Windows, Word, Excel, Internet e Power Point.</p>
+                </li>
+            </ul>
+            <h2 data-pt="Idiomas" data-en="Languages">Idiomas</h2>
+            <ul class="lista-idiomas">
+                <li data-pt="Português (Nativo)" data-en="Portuguese (Native)">Português (Nativo)</li>
+                <li data-pt="Inglês (Básico)" data-en="English (Basic)">Inglês (Básico)</li>
+            </ul>
+        </div>
+    </section>
+    <section class="stack">
+         <h2 data-pt="Stack Arquitetural" data-en="Architectural Stack">Stack Arquitetural</h2>
+        <div class="grid-stack">
+            <div class="card-stack"><span>Backend</span><p>Java, Spring Boot, PHP, Python</p></div>
+            <div class="card-stack"><span>Frontend</span><p>React, TypeScript, JavaScript</p></div>
+            <div class="card-stack"><span>DevOps</span><p>Docker, Debian, Ubuntu, Git</p></div>
+            <div class="card-stack"><span>Database</span><p>MySQL, PostgreSQL</p></div>
+            <div class="card-stack"><span data-pt="Systems & Infrastructure" data-en="Systems & Infrastructure">Systems & Infrastructure</span>
+                <p data-pt="Manutenção de Hardware e Sistemas (Windows/Linux)." data-en="Hardware and Systems Maintenance (Windows/Linux).">Manutenção de Hardware e Sistemas (Windows/Linux).</p>
+            </div>
+        </div>
+    </section>
+    <section id="PORTFOLIO" class="projetos-container">
+        <h2 class="tituloprojeto" data-pt="Portfólio de Projetos" data-en="Project Portfolio">Portfólio de Projetos</h2>      
+        <div class="grid-projetos">
+            <div class="cartao">
+                <span class="tag-projeto">HTML / CSS / JavaScript</span>
+                <h3 data-pt="Churrascômetro" data-en="BBQ Calculator">Churrascômetro</h3>
+                <p data-pt="Calculadora dinâmica desenvolvida com JavaScript puro para estimar consumo de carnes e bebidas. Possui interface responsiva e lógica personalizada para diferentes tipos de eventos." 
+                data-en="Dynamic calculator developed with vanilla JavaScript to estimate meat and drink consumption. It features a responsive interface and custom logic for different event types.">
+                Calculadora dinâmica desenvolvida com JavaScript puro para estimar consumo de carnes e bebidas. Possui interface responsiva e lógica personalizada para diferentes tipos de eventos.
+                </p>
+                <a href="https://github.com/jasonferraz/Churrascometro" target="_blank" data-pt="Repositório GitHub" data-en="GitHub Repository">Repositório GitHub</a>
+            </div>
+            <div class="cartao">
+                <span class="tag-projeto">Python</span>
+                <h3 data-pt="Gestão de Funcionários" data-en="Employee Management">Gestão de Funcionários</h3>
+                <p data-pt="Sistema de CRUD (Cadastro, Consulta e Remoção) desenvolvido para gerenciamento de banco de dados de colaboradores." 
+                   data-en="CRUD system (Create, Read, Update, Delete) developed for employee database management.">Sistema de CRUD (Cadastro, Consulta e Remoção) desenvolvido para gerenciamento de banco de dados de colaboradores.</p>
+                <a href="https://github.com/jasonferraz/Funcionarios" target="_blank" data-pt="Repositório GitHub" data-en="GitHub Repository">Repositório GitHub</a>
+            </div>
+            <div class="cartao">
+                <span class="tag-projeto">Python</span>
+                <h3 data-pt="Sistema de Marmitaria" data-en="Lunchbox Delivery System">Sistema de Marmitaria</h3>
+                <p data-pt="Módulo comercial para processamento de pedidos, seleção de sabores, tamanhos e cálculo dinâmico de valores."
+                   data-en="Commercial module for order processing, flavor and size selection, and dynamic price calculation.">Módulo comercial para processamento de pedidos, seleção de sabores, tamanhos e cálculo dinâmico de valores.</p>
+                <a href="https://github.com/jasonferraz/Marmitaria" target="_blank" data-pt="Repositório GitHub" data-en="GitHub Repository">Repositório GitHub</a>
+            </div>
+
+            <div class="cartao">
+                <span class="tag-projeto">Python</span>
+                <h3 data-pt="ERP Fábrica de Camisetas" data-en="T-shirt Factory ERP">ERP Fábrica de Camisetas</h3>
+                <p data-pt="Algoritmo de automação para controle de produção, integrando escolha de modelos, volume de carga e cálculo de frete."
+                   data-en="Automation algorithm for production control, integrating model selection, load volume, and shipping calculation.">Algoritmo de automação para controle de produção, integrando escolha de modelos, volume de carga e cálculo de frete.</p>
+                <a href="https://github.com/jasonferraz/LojaCamisetas" target="_blank" data-pt="Repositório GitHub" data-en="GitHub Repository">Repositório GitHub</a>
+            </div>
+            <div class="cartao">
+                <span class="tag-projeto">Frontend / Architecture</span>
+                <h3 data-pt="Portfólio Profissional" data-en="Professional Portfolio">Portfólio Profissional</h3>
+                <p data-pt="Desenvolvimento de ecossistema pessoal com suporte multilíngue dinâmico, design responsivo e integração de métricas de engenharia via GitHub API."
+                data-en="Personal ecosystem development with dynamic multilingual support, responsive design, and engineering metrics integration via GitHub API.">
+                Desenvolvimento de ecossistema pessoal com suporte multilíngue dinâmico, design responsivo e integração de métricas de engenharia via GitHub API.
+                </p>
+                <a href="https://github.com/jasonferraz/jasonferraz" target="_blank" data-pt="Repositório GitHub" data-en="GitHub Repository">Repositório GitHub</a>
+            </div>
+            <div class="cartao ver-mais">
+                <h3 data-pt="Ecossistema de Projetos" data-en="Project Ecosystem">Ecossistema de Projetos</h3>
+                <p data-pt="Explore meu repositório completo contendo arquiteturas em Java Spring Boot, microsserviços, automações em Python e implementações de padrões de projeto (Design Patterns)."
+                data-en="Explore my full repository featuring Java Spring Boot architectures, microservices, Python automations, and Design Patterns implementations.">
+                Explore meu repositório completo contendo arquiteturas em Java Spring Boot, microsserviços, automações em Python e implementações de padrões de projeto (Design Patterns).
+                </p>
+                <a href="https://github.com/jasonferraz" target="_blank" data-pt="Acessar Hub de Código" data-en="Access Code Hub">Acessar Hub de Código</a>
+            </div>
+        </div>
+        <p class="legenda-jr" data-pt="Desenvolvedor Júnior | Projetos Acadêmicos e Práticos" data-en="Junior Developer | Academic and Practical Projects">Desenvolvedor Júnior | Projetos Acadêmicos e Práticos</p>
+    </section>
+    <section id="CONTATO" class="secao-contato">
+        <div class="contato-wrapper">
+            <div class="contato-info">
+            <h2 data-pt="Contato" data-en="Contact">Contato</h2>
+            <p data-pt="Seja para discutir arquitetura de sistemas, parcerias em novos projetos ou oportunidades de carreira, estou à disposição. Preencha os campos ao lado e entrarei em contato para darmos o próximo passo."
+            data-en="Whether it's to discuss systems architecture, partnerships on new projects, or career opportunities, I'm available. Fill out the fields and I'll get in touch so we can take the next step.">
+             Seja para discutir arquitetura de sistemas, parcerias em novos projetos ou oportunidades de carreira, estou à disposição. Preencha os campos ao lado e entrarei em contato para darmos o próximo passo.
+            </p>
+    
+        <div class="dados-diretos">
+            <span><strong>WhatsApp:</strong> 
+                <a href="https://wa.me/5541997773745" target="_blank" class="link-direto">41 9 9777-3745</a>
+            </span>
+            <span><strong>E-mail:</strong> 
+                <a href="mailto:jjunioferraz@gmail.com" class="link-direto">jjunioferraz@gmail.com</a>
+            </span>
+        </div>
+        <div class="redes-sociais">
+            <a href="https://github.com/jasonferraz" target="_blank" class="btn-social github">
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/jason-ferraz-4793712a8" target="_blank" class="btn-social linkedin">
+                LinkedIn
+            </a>
+        </div>
+        </div>
+           <form class="form" action="https://api.staticforms.xyz/submit" method="POST">
+    <input type="hidden" name="accessKey" value="TOKEN"> <input type="hidden" name="redirectTo" value="https://jasonferraz.github.io">
+
+    <h3 data-pt="Entre em contato" data-en="Get in touch">Entre em contato</h3>
+    
+    <div class="input-group">
+                    <label for="nome" data-pt="Nome" data-en="Name">Nome</label>
+                    <input type="text" name="name" id="nome" 
+                        data-pt="Seu nome completo" 
+                        data-en="Your full name" 
+                        placeholder="Seu nome completo" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" 
+                        placeholder="seu@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="msg" data-pt="Mensagem" data-en="Message">Mensagem</label>
+                    <textarea name="message" id="msg" rows="5" 
+                            data-pt="Como posso te ajudar?" 
+                            data-en="How can I help you?" 
+                            placeholder="Como posso te ajudar?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar" data-pt="Enviar Mensagem" data-en="Send Message">Enviar Mensagem</button>
+            </form>
+        </div>
+        <button id="botao-topo" class="btn-topo-fixo" data-pt="Voltar ao Topo ↑" data-en="Back to Top ↑">Voltar ao Topo ↑</button>
+    </section>
+    <footer class="rodape-final">
+        <div class="rodape-container">
+            <div class="copyright">
+                <p>© 2026 | <span data-pt="Desenvolvido por" data-en="Developed by">Desenvolvido por</span> <strong>Jason Ferraz</strong></p>
+            </div>
+
+            <div class="sociais-rodape">
+                <a href="https://wa.me/5541997773745" target="_blank" title="WhatsApp">WhatsApp</a>
+                <a href="https://www.instagram.com/jason.ferraz" target="_blank" title="Instagram">Instagram</a>
+                <a href="https://www.linkedin.com/in/jason-ferraz-4793712a8" target="_blank" title="LinkedIn">Linkedin</a>
+                <a href="https://github.com/jasonferraz" target="_blank" title="GitHub">GitHub</a>
+                <a href="mailto:jjunioferraz@gmail.com" title="E-mail">E-Mail</a>
+            </div>
+
+            <div class="citacao">
+                <p data-pt='"Até aqui nos ajudou o Senhor"' data-en='"Thus far the Lord has helped us"'>
+                "Até aqui nos ajudou o Senhor" 
+                </p>
+                <span>1 Samuel 7:12</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const btnIdioma = document.getElementById('btn-idioma');
+        let idiomaAtual = 'pt';
+
+        // FUNÇÃO DE TRADUÇÃO
+        btnIdioma.addEventListener('click', () => {
+            idiomaAtual = (idiomaAtual === 'pt') ? 'en' : 'pt';
+            btnIdioma.innerText = (idiomaAtual === 'pt') ? 'EN' : 'PT';
+            
+            // Atualiza o lang da página (pt-br ou en)
+            document.documentElement.lang = (idiomaAtual === 'pt') ? 'pt-br' : 'en';
+
+            const elementos = document.querySelectorAll('[data-pt]');
+            elementos.forEach(el => {
+                const novoTexto = el.getAttribute(`data-${idiomaAtual}`);
+                
+                if (novoTexto) {
+                    // Se for um input ou textarea, traduz o placeholder
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.placeholder = novoTexto;
+                    } else {
+                        // Para os demais elementos, traduz o conteúdo (aceita HTML como <b>)
+                        el.innerHTML = novoTexto; 
+                    }
+                }
+            });
+        });
+
+        // SCROLL SUAVE PARA OS LINKS
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offset = 100; 
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - offset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // BOTÃO VOLTAR AO TOPO
+        const btnTopo = document.getElementById('botao-topo');
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnTopo.style.display = "block";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        };
+
+        btnTopo.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // ANIMAÇÃO DE REVELAÇÃO (INTERSECTION OBSERVER)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll(".cartao, .stack, h2, p, .contato-info").forEach((el) => {
+            el.classList.add("reveal");
+            observer.observe(el);
+        });
+
+        // EFEITO DE DISTORÇÃO NO LOGO (GSAP)
+        const logo = document.querySelector("#logo-distort");
+
+        if (logo) {
+            logo.addEventListener("mouseenter", () => {
+                gsap.to("#distortionFilterLogo feDisplacementMap", 0.8, {
+                    attr: { scale: 30 },
+                    ease: "power2.out"
+                });
+                gsap.to("#distortionFilterLogo feTurbulence", 0.8, {
+                    attr: { baseFrequency: '2.05 .05' },
+                    ease: "power2.out"
+                });
+            });
+            
+            logo.addEventListener("mouseleave", () => {
+                gsap.to("#distortionFilterLogo feDisplacementMap", 0.8, {
+                    attr: { scale: 0 },
+                    ease: "power2.out"
+                });
+                gsap.to("#distortionFilterLogo feTurbulence", 0.8, {
+                    attr: { baseFrequency: '2.01 .01' },
+                    ease: "power2.out"
+                });
+            });
+        }
+    </script>
+</body>
+</html>
